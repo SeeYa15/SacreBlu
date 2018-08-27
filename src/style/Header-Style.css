@@ -1,0 +1,15 @@
+header{
+    margin: auto;
+    height: 20vh;
+    color: white; /*Supremacy...*/
+    background: black;
+    width: 80%;
+    position: relative;
+}
+
+ .header-text {
+     margin: 5px;
+     vertical-align: auto;
+     line-height: 20vh;
+     font-size: 6vw
+ }

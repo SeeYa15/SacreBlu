@@ -1,0 +1,19 @@
+Mixed code
+
+//USED IN RULES.JS
+<div className="tut-button-soundgroup-div">
+                    <h2>Kåmang</h2>
+                    <img className="arrow-image" src={require("./pictures/DownArrow.png")} alt="Error404" />
+                    <button onClick={this.renderSound}>Comment</button>
+                    {this.state.playme && <Reignite soundid="comment"/>}
+                </div>
+                <div className="tut-button-soundgroup-div">
+                    <h2>Sui</h2>
+                    <img className="arrow-image" src={require("./pictures/DownArrow.png")} alt="Error404"/>
+                    <button>Suis</button>
+                </div>
+                <div className="tut-button-soundgroup-div">
+                    <h2>Spör</h2>
+                    <img className="arrow-image" src={require("./pictures/DownArrow.png")} alt="Error404"/>
+                    <button>Sport</button>
+                </div>

@@ -1,0 +1,32 @@
+html, body{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}   
+
+.app-body-wrapper{
+    padding: 10px 0px 0px 0px
+}
+
+.main-div{
+    background: linear-gradient(rgb(25, 131, 117),rgb(43, 124, 67));
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.general-content-div{
+    width: 60%;
+    background-color: rgb(131, 119, 119);
+    border-radius: 5px;
+}
+.general-content-div h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin: auto;
+    width: 80%;
+}
