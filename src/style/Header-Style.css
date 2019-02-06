@@ -1,15 +1,38 @@
-header{
-    margin: auto;
-    height: 20vh;
-    color: white; /*Supremacy...*/
-    background: black;
-    width: 80%;
-    position: relative;
+@font-face{
+    font-family: Avantn;
+    src: url(Fonts/AVANTN.ttf);
 }
 
- .header-text {
-     margin: 5px;
-     vertical-align: auto;
-     line-height: 20vh;
-     font-size: 6vw
- }
+header{    
+    background: rgb(63, 43, 248);
+    display: flex;
+}
+
+#SouthParkImage{
+    height: 100%;
+    width: 10%;
+}
+
+.header-text {
+    font-size: 3vw;
+    font-family: Avantn;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-link {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+.head-link b:hover {
+    border-bottom: 3px solid rgb(243, 55, 55);
+}
+
+#EasterEgg{
+    display: contents;
+}

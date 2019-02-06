@@ -18,7 +18,7 @@ class Sounds extends Component {
         }
         return(            
             <div>
-                <h1>hhhh</h1>
+                <h1>Sound Page</h1>
                 <Sound url={soundfile} playStatus={Sound.status.PLAYING}
                 onLoading={this.handleSongLoading}
                 onPlaying={this.handleSongPlaying}

@@ -1,0 +1,37 @@
+.table-main{ 
+    display: flex;
+    flex-direction: column;   
+}
+
+.table-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+.table-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.example-header-text{
+    margin-left: 5%;
+    flex:1;
+}
+
+.group-word{
+    display:flex;
+}
+
+.example-header-text-word{
+    margin-left: 5%;
+    flex:1;
+    font-weight: bold;
+}
+
+.example-content-text{
+    margin: auto;
+    margin-left: 5%;
+    flex:1;
+}

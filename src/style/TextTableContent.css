@@ -1,0 +1,16 @@
+.left-side{
+    margin-left: 5%;
+    flex:1;
+}
+
+.left-side b{
+    border-bottom: solid 1px black;    
+}
+
+.text-content-div{
+    display:flex;
+}
+
+.right-side{
+    flex:3;
+}

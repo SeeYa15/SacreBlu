@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style/Tutorial-style.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-// import Pronounciation from './Pronounciation';
 
 class Tutorial extends Component {
     constructor(props) {

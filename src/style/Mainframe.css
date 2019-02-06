@@ -1,29 +1,55 @@
 html, body{
     height: 100%;
+    width: 100%;
+    background-color: white;    
+    margin: 0;
 }
 
-h1{
-    text-align: center;
-}   
+@font-face{
+    font-family: Avantn;
+    src: url(./Fonts/AVANTN.ttf);
+}
 
 .app-body-wrapper{
     padding: 10px 0px 0px 0px
 }
 
 .main-div{
-    background: linear-gradient(rgb(25, 131, 117),rgb(43, 124, 67));
-    width: 60%;
-    height: 100%;
+    position: relative;    
+    background: rgb(63, 43, 248);
+    width: 80%;
     border: 1px solid black;
     border-radius: 10px;
     margin: auto;
+    animation: Droppin 1s;
+    animation-fill-mode: forwards;
 }
 
-.general-content-div{
-    width: 60%;
-    background-color: rgb(131, 119, 119);
-    border-radius: 5px;
+@keyframes Droppin{
+    from{top: 0px;}
+    to{top: 100px;}
 }
+
+.main-div-list{
+    list-style-type: none;
+}
+
+.main-div-list li{
+    text-align: center;
+}
+
+.main-div-list li a{
+    text-decoration:none;
+    color:white;
+    font-family: Avantn;
+    font-size: 3em; 
+}
+
+.title-h1{
+    display: flex;
+    justify-content: center
+}
+
 .general-content-div h2{
     border-bottom: 1px solid black;
     padding-bottom: 5px;

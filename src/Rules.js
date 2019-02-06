@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style/Rulesstyle.css';
 import firebase from './firebase';
 import {Link} from 'react-router-dom';
+import { checkPropTypes } from 'prop-types';
 var db = firebase.database().ref('Words');
 
 class Rules extends Component {
@@ -18,20 +19,27 @@ class Rules extends Component {
 
     render() {
         return (
-            <div className="component-div-wrapper general-content-div" onClick={this.addtext}>
+            <div className="rules-main-div">
                 <h1>In this page we will go trough some rules that the french language have regarding pronunciation</h1>
-                <h2>Click to continue</h2>
-                <WrappButton path={"/Rules/Pronounce"} buttonname={"Learn how to pronounce!"}/>
-                <WrappButton path={"/Rules/Prefekt"} buttonname={"Learn prefekt, tense and futur words"}/>
+                <Pathway path={"/Rules/Pronounce"} buttonname={"Pronounciation"} imgSource={"./pictures/PencilRules.png"}/>           
+                <Pathway path={"/Rules/Prefekt"} buttonname={"Perfect, Tense and Future"} imgSource={"./pictures/AbcLogo.png"}/>
             </div>
         );
     }
 }
-const WrappButton = (props) => {
+
+function Pathway(props){
     return(
-        <button className="wrapped-link" style={{margin:"10px auto"}}>
-            <Link style={{display:"block", height:"100%", width:"50%", position:"relative", padding:"10px", textDecoration:"none", margin:"auto"}} to={props.path}>{props.buttonname}</Link>
-        </button>
+        <div className="pathway-div">
+            <button>{props.buttonname}</button>
+            <ImageLogo imgSource={props.imgSource}><Link style={{display:"block", height:"100%", width:"50%", position:"relative", padding:"10px", textDecoration:"none", margin:"auto"}} to={props.path}>{props.buttonname}</Link></ImageLogo>
+        </div>
+    );
+}
+
+const ImageLogo = (props) => {
+    return(
+        <img src={require(""+props.imgSource)}></img>
     );
 }
 

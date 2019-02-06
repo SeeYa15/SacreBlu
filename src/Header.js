@@ -7,7 +7,7 @@ class Header extends Component{
 
     render(){
         return(
-            <h1>{this.props.text}</h1>
+            <h1 style={{display:"flex", justifyContent:"center"}}>{this.props.text}</h1>
         );
     }
 }
