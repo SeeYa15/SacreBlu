@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './style/TextTableContent.css';
-import './style/Table-example-layout.css';
-import './style/GrammarStyle.css';
-import firebase from './firebase';
+import '../style/TextTableContent.css';
+import '../style/Table-example-layout.css';
+import '../style/GrammarStyle.css';
+import firebase from '../firebase';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-class Grammar extends Component{
+class RegelbundnaV extends Component{
 
     constructor(){
         super();
@@ -19,7 +19,7 @@ class Grammar extends Component{
     render(){
         return(
             <div className="content-main-div">  
-                <TableInformation TitleHead="Grammar" Text={this.state.mytext} ></TableInformation>
+                <TableInformation TitleHead="Regelbundna Verb" Text={this.state.mytext} ></TableInformation>
                 <div className="table-main">              
                     <TableExample word="Parler"></TableExample>
                     <TableExample word="Choisir"></TableExample>
@@ -50,8 +50,10 @@ class TableInformation extends Component{
     render(){
         return(
             <div>
-                <h1 className="title-h1">{this.props.TitleHead}</h1>
-                <Link to="/Grammar/Words">Learn words</Link>
+                <div className="title-content">
+                    <h1 className="title">{this.props.TitleHead}</h1>                
+                    <Link to="./OregelbundnaV"><img className="nav-img" src={require("../pictures/Arrow-Right.svg")}></img></Link>
+                </div>
                 <div className="text-content-div">
                     <p className="left-side"><b>Regelbundna Verb</b></p>
                     <p className="right-side">{this.props.Text}</p>
@@ -106,4 +108,4 @@ class TableExample extends Component{
     }
 }
 
-export default Grammar;
+export default RegelbundnaV;

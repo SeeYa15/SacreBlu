@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
-    background-color: white;    
+    background-color: rgb(219, 219, 219);    
     margin: 0;
 }
 
@@ -11,12 +11,13 @@ html, body{
 }
 
 .app-body-wrapper{
-    padding: 10px 0px 0px 0px
+    padding: 10px 0px 0px 0px;
+    display: flex;
 }
 
 .main-div{
     position: relative;    
-    background: rgb(63, 43, 248);
+    background: rgb(44, 22, 247);
     width: 80%;
     border: 1px solid black;
     border-radius: 10px;
@@ -30,15 +31,15 @@ html, body{
     to{top: 100px;}
 }
 
-.main-div-list{
+.nav-list{
     list-style-type: none;
 }
 
-.main-div-list li{
+.nav-list li{
     text-align: center;
 }
 
-.main-div-list li a{
+.nav-list li a{
     text-decoration:none;
     color:white;
     font-family: Avantn;

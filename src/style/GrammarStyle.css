@@ -1,3 +1,24 @@
 .content-main-div{
-    background-color: white;
+    background-color: white;    
+    flex: 0.8;
+    margin: auto;
+    box-shadow: 1px 10px 15px red;
+}
+
+.title-content{
+    display: flex;
+    text-align: center;
+}
+
+.title-content a{
+    padding-right: 5% !important;
+}
+
+.title{
+    color:red;
+    flex:1;
+}
+
+.nav-img{
+    height: 80px;
 }
